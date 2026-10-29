@@ -1,47 +1,75 @@
-<!-- l10n-sync: source-file="README.md" -->
-🌐 [English](README.md) | Español | [Português (Brasil)](README.pt_BR.md) | [한국어](README.ko.md)
+<p align="right">🌐 English | <a href="README.es.md">Español</a> | <a href="README.pt_BR.md">Português (Brasil)</a> | <a href="README.ko.md">한국어</a></p>
+
+<div align="center">
 
 # 🎮 Mona Mayhem
 
-**Taller VS Code GitHub Copilot** — Construye una Arena de Batalla de Contribuciones GitHub
+### Convierte los gráficos de contribuciones de GitHub en un duelo de arcade.
 
-Un sitio web con temática de arcade retro construido con Astro que permite comparar los gráficos de contribución GitHub de dos usuarios. Este taller enseña características de VS Code Copilot a través de la construcción de esta app.
+Construye paso a paso, con GitHub Copilot, una arena de estilo retro que compara a dos usuarios de GitHub. Elige cómo trabajar: usa VS Code o acepta el reto desde la terminal con Copilot CLI.
 
-![Mona Mayhem Screenshot](https://github.com/user-attachments/assets/5eca79e2-cb9f-4e93-aa0d-23666ebde3b7)
+<p>
+   <a href="workshop/es/00-overview.md"><strong>Empieza el taller →</strong></a>
+   &nbsp;·&nbsp;
+   <a href="https://copilot-dev-days.github.io/mona-mayhem/">Abre el sitio del taller</a>
+</p>
 
-## 📚 Taller
+**~60 minutos** &nbsp;·&nbsp; **7 partes** &nbsp;·&nbsp; **Dos formas de construir**
 
-| Parte | Título | Característica de Copilot |
-|-------|--------|--------------------------|
-| [00](workshop/es/00-overview.md) | Visión General | Lo que aprenderás |
-| [01](workshop/es/01-setup.md) | Configuración e Ingeniería de Contexto | Instrucciones de workspace, background agents |
-| [02](workshop/es/02-plan-and-scaffold.md) | Planificar y Estructurar | Plan Mode |
-| [03](workshop/es/03-agent-mode.md) | Agent Mode: Construir el Juego | Agent Mode |
-| [04](workshop/es/04-design-vibes.md) | Temas Design-First | Plan + Agent Mode |
-| [05](workshop/es/05-polish.md) | Pulido & Multi-Agent | Background & cloud agents |
-| [06](workshop/es/06-bonus.md) | Bonus y Extensiones | Desafíos abiertos |
+</div>
 
-## 🚀 Inicio Rápido
+<p align="center">
+   <img src="https://github.com/user-attachments/assets/5eca79e2-cb9f-4e93-aa0d-23666ebde3b7" alt="Arena de batalla retro arcade para comparar contribuciones de GitHub" width="900" />
+</p>
 
-1. **Usa esta plantilla** → Crea un nuevo repositorio
-2. Clona y abre en VS Code
-3. Abre el panel de Chat y escribe `/setup`
-4. Sigue la [guía del taller](workshop/es/00-overview.md)
+<p align="center"><em>La arena de batalla de contribuciones que construirás durante el taller.</em></p>
 
-## Requisitos Previos
+## Elige tu jugador
 
-- VS Code v1.107+
-- GitHub Copilot (Pro, Business o Enterprise)
-- Node.js 18+
-- Git
+Ambos itinerarios siguen el mismo proyecto y las mismas partes del taller. Elige el entorno en el que quieras trabajar:
 
-## Stack Tecnológico
+| VS Code | Copilot CLI |
+|---------|-------------|
+| Explora con Chat, planifica con Plan Mode, construye con Agent Mode y pule el resultado con agentes en segundo plano y revisiones integradas en el editor. | Trabaja desde la terminal con `copilot`, contexto `@file`, `/plan`, `/fleet`, `/delegate` y `/review`. |
 
-- **Framework**: [Astro](https://astro.build/) v5
-- **Runtime**: Node.js con adaptador [@astrojs/node](https://docs.astro.build/en/guides/integrations-guide/node/)
-- **Fuente**: Press Start 2P (fuente de juegos retro)
-- **API**: API de gráfico de contribuciones de GitHub
+## Tu recorrido de construcción
+
+Empieza con un plan y convierte después el proyecto inicial en una arena de batalla de gráficos de contribuciones. Practicarás cómo proporcionar contexto útil del proyecto a Copilot, definir una implementación antes de programar, iterar en el diseño y revisar el resultado.
+
+| Parte | Misión | En qué trabajarás |
+|------|--------|------------------|
+| [00 · Visión general](workshop/es/00-overview.md) | Elige tu itinerario | Objetivos de aprendizaje y preparación del taller |
+| [01 · Configuración](workshop/es/01-setup.md) | Define el contexto | Instrucciones, permisos y entorno |
+| [02 · Planificación y estructura](workshop/es/02-plan-and-scaffold.md) | Diseña la construcción | Arquitectura de la API y de la página |
+| [03 · Construye el juego](workshop/es/03-agent-mode.md) | Hazlo jugable | Implementación con agentes e iteración |
+| [04 · Tematización desde el diseño](workshop/es/04-design-vibes.md) | Encuentra el estilo arcade | Planificación e implementación visual |
+| [05 · Pulido](workshop/es/05-polish.md) | Refina la experiencia | Trabajo paralelo, revisiones y controles de calidad |
+| [06 · Bonus](workshop/es/06-bonus.md) | Ve más allá del encargo | Funciones adicionales y experimentos con Copilot |
+
+## Empieza
+
+1. Crea tu propio repositorio con **Use this template** o haz un fork de este.
+2. Clona el repositorio y ábrelo en VS Code, o trabaja desde la terminal con Copilot CLI.
+3. Sigue la [visión general del taller](workshop/es/00-overview.md) y elige tu itinerario.
+
+### Qué necesitas
+
+- GitHub Copilot (Pro, Business o Enterprise), Git y Node.js
+- **Itinerario de VS Code:** VS Code 1.107 o posterior y la extensión de GitHub Copilot con la sesión iniciada
+- **Itinerario del CLI:** GitHub Copilot CLI (`copilot`); Node.js 22 o posterior si lo instalas con npm, o Homebrew / WinGet
+
+## Cómo está construido
+
+- [Astro](https://astro.build/) 6 con el [adaptador de Node](https://docs.astro.build/en/guides/integrations-guide/node/)
+- Datos del gráfico de contribuciones de GitHub
+- Press Start 2P, para darle un aire arcade
+
+## Nota sobre el despliegue
+
+El flujo de trabajo actual de GitHub Pages publica el taller estático y la documentación de `docs/` y `workshop/`. **No** compila ni despliega la aplicación Astro de `src/`.
+
+Para desplegar la aplicación Astro en GitHub Pages, cambia Astro a salida estática, elimina el adaptador de Node y actualiza el flujo de trabajo para compilar y publicar `dist/`. Si necesitas las rutas de API en producción, despliega en una plataforma de servidor como Vercel, Netlify o un host de Node.
 
 ## Licencia
 
-MIT
+[MIT](LICENSE)

@@ -21,4 +21,9 @@ function updateToggleIcon() {
     btn.innerHTML = isLight ? '🌙 Dark' : '☀️ Light';
 }
 
-document.addEventListener('DOMContentLoaded', updateToggleIcon);
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.theme-toggle').forEach((btn) => {
+        btn.addEventListener('click', toggleTheme);
+    });
+    updateToggleIcon();
+});
